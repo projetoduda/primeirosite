@@ -1,0 +1,41 @@
+body{ 
+	 background-image:url("../img/imagemdofundo.jfif");
+	 background-repeat: no-repeats;
+	 width: 80%
+	 margin-left:auto;
+	 margin-right: auto;
+	 text-align: center;
+           } 
+        p{
+           color: black;
+           text-align: center;
+           font-size: 45px
+           
+            }
+        h1,h3,h2 {text-align: center;
+                  text-decoration:underline;
+                  font-size:45px
+            }
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
