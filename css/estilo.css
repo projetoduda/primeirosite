@@ -1,21 +1,26 @@
 body{ 
-	 background-image:url("../img/imagemdofundo.jfif");
-	 background-repeat: no-repeats;
+	 background-image:url("../img/fundoamarelo.jfif");
 	 width: 80%
 	 margin-left:auto;
 	 margin-right: auto;
-	 text-align: center;
-           } 
-        p{
+	 text-align: center;}
+       
+         p{
            color: black;
            text-align: center;
-           font-size: 45px
-           
-            }
-        h1,h3,h2 {text-align: center;
+           font-size: 45px }
+       
+        h1,h3,h2 {
+                  text-align: center;
                   text-decoration:underline;
-                  font-size:45px
-            }
+                  font-size:45px}
+       ul li, ol li{
+              text-decoration: underline;
+              font-weight: bolder;
+
+                    }
+
+                    
 a:link {
   color: blue;
   background-color: transparent;
@@ -23,7 +28,7 @@ a:link {
 }
 
 a:visited {
-  color: pink;
+  color: red;
   background-color: transparent;
   text-decoration: none;
 }
@@ -39,3 +44,14 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+  table{
+    font-family: arial,sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color:black;  
+}
+  td,th{
+    border: 3px solid #F5FFFA ;
+}
+
+
