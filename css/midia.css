@@ -1,0 +1,27 @@
+/*quando a tela for de 600px ou menos*/
+@media  screen and (max-width: 600px){
+.exemplo{
+    background-color:purple;
+
+}
+
+h1{
+display: none;
+
+}
+p.test2 {
+  white-space: nowrap;
+  width: 200px;
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+
+}
+/*quando a tela for mais de 601px ou menos*/
+@media  screen and (min-height: 601px){
+.exemplo{
+    background-color:pink;
+
+}
