@@ -19,7 +19,7 @@ header,footer{
      flex-direction:column;
      font-size: 1.5em;
      align-items: center;
-}
+} 
 
  .menu-opcoes{
       text-align: center;
@@ -55,7 +55,12 @@ h1,h2{
   font-family: 'IM Fell Great Primer SC', serif;
 }
 
-
+.testeri{
+  float:left;
+}  
+.testepa{
+  margin-left: 25%;
+}  
 .titulos {
        color:black;
        text-align:center;
