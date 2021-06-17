@@ -24,6 +24,7 @@ header,footer{
  .menu-opcoes{
       text-align: center;
 }
+ 
  .fixo{
   position: fixed;
   top: 0;
@@ -130,6 +131,7 @@ a:active {
    margin-right:auto;
    margin-left:auto;
    position: relative;
+
 }
 
 /*tela menor que 599px*/
@@ -164,4 +166,42 @@ a:active {
       margin-left: 10px;
       }
 }
- 
+.fundo{
+  background-color:#FFC1C1;
+  width: 80%
+  margin-left:auto;
+  margin-right:auto;
+  padding: 3%;
+  font-size: 1.1em;
+}
+
+.distancia{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+     input[type=text], select,textarea{
+       width: 100%;
+       padding: 12px 20px;
+       display: block;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       box-sizing: border-box;
+}
+
+     input[type=submit] {
+      width: 100%;
+      background-color:rgba(128,0,128);
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+}
+
+fieldset{
+   width: 95%;
+   border: 2px solid  #363636;
+   padding: 2%;
+}
