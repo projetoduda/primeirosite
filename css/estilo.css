@@ -68,6 +68,20 @@ h1,h2{
        font-size:50px;
        margin-top:3%; 
        margin-bottom:3%;
+
+                }
+
+ h3{
+ font-size: 1.2em;
+ text-decoration: underline;
+}
+
+.titulosh3 {
+       color:#363636;
+       font-weight: bolder;
+       text-align:center;
+       margin-top:2%; 
+       margin-bottom:2%;
                 }
        ul li, ol li{
               
@@ -87,7 +101,6 @@ h1,h2{
   max-height:350px;
 }
 
-
 a:link {
   color:pink;
   background-color: transparent;
@@ -95,7 +108,7 @@ a:link {
 }
 
 a:visited {
-  color: pink;
+  color:pink ;
   background-color: transparent;
   text-decoration: none;
 }
@@ -133,39 +146,55 @@ a:active {
    position: relative;
 
 }
+ 
+ #sobre{
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   position: relative;
+   margin: 0 auto;
+ }
+ #sobre .sobre{
+   text-align: center;
 
-/*tela menor que 599px*/
-@media screen and (max-width: 600px) {
-  .container{
-   margin-top: 65%;
+ }
 
+.imgsobre{
+   width:20%; 
+   height:20%;
+   transition: width 2s, height 2s, transform 2s;
 }
+.imgsobre:hover{
+ 
+  transform: rotate(360deg);
 }
-/*tela maior que 600px*/
-@media screen and (min-width: 600px) {
-  .container{
-   margin-top: 40%;
+
+ #galeria{
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   position: relative;
+   margin: 15px 15px;
+ }
+
+ #galeria .galeria{
+   margin: 15px 15px;
+   text-align: center;
+
+ }
+
+.imggaleria{
+  width: 100%;
+  border-radius: 12%;
+  box-shadow: 10px 10px black;
+  transition: width 2s;
 }
+
+.imggaleria:hover {
+  width: 300px;
 }
-/*tela maiores que 768px*/
-@media screen and (min-width: 768px) {
-    .container{
-     margin-top: 15%;}
-     header{
-        background-color:rgba(128,0,128);
-        flex-direction: row;
-        position: relative;
-      }
-     .menu-opcoes{
-      position: absolute;
-      right: 5%;
-      top:45%;
-      }
-     .menu-opcoes ul li{
-      display:inline; 
-      margin-left: 10px;
-      }
-}
+
+
 .fundo{
   background-color:#FFC1C1;
   width: 80%
@@ -199,9 +228,82 @@ a:active {
       border-radius: 4px;
       cursor: pointer;
 }
+.item{
+    position: relative;
+    margin: 10px 0;
+
+}
+.item::before{
+content: '';
+position: relative;
+left: 0;
+top: 0;
+padding: 10px 15px;
+background-image: url('../img/maozinha1.png');
+background-repeat: no-repeat;
+margin-right: 3px;
+}
 
 fieldset{
    width: 95%;
    border: 2px solid  #363636;
    padding: 2%;
 }
+
+/*tela menor que 599px*/
+@media screen and (max-width: 600px) {
+  .container{
+   margin-top: 65%;
+
+}
+}
+/*tela maior que 600px*/
+@media screen and (min-width: 600px) {
+  .container{
+   margin-top: 40%;
+}
+}
+/*tela maiores que 768px*/
+@media screen and (min-width: 768px) {
+    .container{
+     margin-top: 15%;}
+     header{
+        background-color:rgba(128,0,128);
+        flex-direction: row;
+        position: relative;
+      }
+     .menu-opcoes{
+      position: absolute;
+      right: 5%;
+      top:45%;
+      }
+     .menu-opcoes ul li{
+      display:inline; 
+      margin-left: 10px;
+      }
+
+      #sobre , #galeria{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+      }
+
+      #sobre h1 ,h3 ,p {
+      width: 100%;
+      text-align: center;
+     }
+      #sobre .sobre , #galeria .galeria{
+       width: 25%;
+       text-align: center;
+     }
+       #galeria .galeria{
+        width: 20%;
+       text-align: center;
+     }
+}
+
+
+
+
+
+
